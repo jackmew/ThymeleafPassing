@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+  	 <!-- together -->
+  	 <table>
+  	 	<thead>
+  	 		<tr>
+	  	 		<th data-th-text="#{list.str}">string</th>
+	  	 		<th data-th-text="#{list.i}">int</th>
+	  	 	</tr>
+  	 	</thead>
+  	 	<tbody>
+  	 		<tr data-th-each="foo: ${foos}">
+  	 			<td data-th-text="${foo.str}"></td>
+  	 			<td data-th-text="${foo.i}"></td>
+  	 		</tr>
+  	 	</tbody>
+  	 </table>
+  </body>
+
+</html>

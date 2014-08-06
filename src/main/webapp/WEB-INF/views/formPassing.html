@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <!-- catch object 
+  	<div th:object="${foo}" >
+  		<label>catch object :</label>
+		<input type="text" th:field="*{str}"/>
+		<input type="text" th:field="*{i}"/>	
+  	</div>
+  	-->
+  	
+  	<!-- send object
+  	<form action="#" th:action="@{/receiveObject}" th:object="${foo}" method="post">
+		<input type="text" th:field="*{str}"/>
+		<input type="text" th:field="*{i}"/>
+		<input type="submit"/>  		
+  	</form>
+  	 -->
+  	 <!-- together -->
+  	 <form action="#" th:action="@{/receiveObject}" th:object="${foo}" method="post">
+		<input type="text" th:field="*{str}"/>
+		<input type="text" th:field="*{i}"/>
+		<input type="submit"/>  		
+  	</form>
+  </body>
+
+</html>

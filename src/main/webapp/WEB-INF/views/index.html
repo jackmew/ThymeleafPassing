@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Thymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <h1 th:text="#{home.welcome}">Welcome!</h1>
+  
+  	<div>
+	  	<p th:text="#{home.object}">object</p>
+		<a href="sendObject">send foo object</a>
+	</div>
+	
+	<div th:if="${foo != null}">
+		<table th:object="${foo}">
+			<p th:text="*{str}">foo.str</p>
+			<p th:text="*{i}">foo.i</p>
+		</table>
+	</div>
+	
+	<div>
+	  	<p th:text="#{home.list}">object</p>
+		<a href="sendList">send foos is List</a>
+	</div>
+	
+	
+  </body>
+
+</html>
