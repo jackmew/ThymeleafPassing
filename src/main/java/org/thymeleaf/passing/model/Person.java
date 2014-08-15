@@ -12,11 +12,11 @@ import javax.validation.constraints.Size;
  *
  */
 public class Person {
-	@Size(min=2, max=30)
+	@Size(min=2, max=30 , message = "{error.person.name.size}")
     private String name;
 
-    @NotNull
-    @Min(18)
+    @NotNull(message = "{error.person.age.null}")
+    @Min(value = 18 , message = "{error.person.age.min}") //@Min(18)
     private Integer age;
 
     public String getName() {
