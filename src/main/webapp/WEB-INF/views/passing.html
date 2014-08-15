@@ -12,7 +12,7 @@
   
   	<div>
 	  	<p th:text="#{passing.object}">object</p>
-		<a th:href="@{/passing/sendObject}">send foo object</a>
+		<a th:href="@{/passing/sendObject}" th:text="#{passing.send.object}">object</a>
 	</div>
 	
 	<div th:if="${foo != null}">
@@ -24,12 +24,12 @@
 	
 	<div>
 	  	<p th:text="#{passing.list}">object</p>
-		<a th:href="@{/passing/sendList}">send foos in List</a>
+		<a th:href="@{/passing/sendList}" th:text="#{passing.send.list}">list</a>
 	</div>
 	
 	<br></br>
 	
-	<a th:href="@{/}">home</a>
+	<a th:href="@{/}" th:text="#{home}">home</a>
   </body>
 
 </html>

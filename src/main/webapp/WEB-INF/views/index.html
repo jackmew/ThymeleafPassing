@@ -12,13 +12,14 @@
   	<div>
 	  	<p th:text="#{home.welcome}">Learn</p>
 	  	
-		<a th:href="@{/passing/}">1. Learn passing</a>
+		<a th:href="@{/passing/}" th:text="#{home.passing}">Learn passing</a>
 		<br></br>
 		<br></br>
-		<a th:href="@{/expression/}">2. Learn expression</a>
+		<a th:href="@{/expression/}" th:text="#{home.expression}">Learn expression</a>
+		
 		<br></br>
 		<br></br>
-		<a th:href="@{/validate/}">3. Learn validating form input</a>
+		<a th:href="@{/validate/}" th:text="#{home.validation}">Learn validating form input</a>
 	</div>
 	
   </body>

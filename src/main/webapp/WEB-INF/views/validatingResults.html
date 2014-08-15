@@ -1,7 +1,7 @@
 <html>
 	<body>
-		<p>Congratulations! You are old enough to sign up for this site.</p>
+		<p th:text="#{validation.result}">Congratulations</p>
 		
-		<a th:href="@{/}">home</a>
+		<a th:href="@{/}" th:text="#{home}">home</a>
 	</body>
 </html>

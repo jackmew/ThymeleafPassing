@@ -27,7 +27,7 @@
   	 <form action="#" th:action="@{/passing/receiveObject}" th:object="${foo}" method="post">
 		<input type="text" th:field="*{str}"/>
 		<input type="text" th:field="*{i}"/>
-		<input type="submit"/>  		
+		<input type="submit" th:value="#{passing.button.submit}"/>  		
   	</form>
   </body>
 

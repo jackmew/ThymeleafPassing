@@ -12,45 +12,45 @@
   	<div>
 	  	<h1 th:text="#{expression.welcome}">expression</h1>
 	  	
-	  	<p>1. direct access to the java.util.Locale associated with current request :</p>
+	  	<p th:text="#{expression.locale}">1.locale</p>
 	  	<p th:text="${#locale}">locale</p>
 	  	
-	  	<p>2. direct access Session => Is session Empty ? :</p>
+	  	<p th:text="#{expression.session}">2.session</p>
 	  	<p th:text="${session.isEmpty()}">T/F</p>
 	  	
 	</div>
 	
 	<div th:with="var=${123}">
-		<p>3. local variable :</p>
+		<p th:text="#{expression.localVariable}">3. local variable :</p>
 		<p th:text="${var}"></p>
 	</div>	
 	
 	<div th:with="name=${'Jack'}">
-	  	<p>4. Literal substitutions :</p>
+	  	<p th:text="#{expression.literalSubstitutions}">4. Literal substitutions :</p>
 	  	<p th:text="'The name is ' + ${name}">show name</p>
 	</div>	
 	
 	<div>
-	  	<p>5. Arithmetic :</p>
+	  	<p th:text="#{expression.arithmetic}">5. Arithmetic :</p>
 	  	<p>1 + 2</p>
 	  	<p th:text="1 + 2">show number</p>
 	</div>
 	
 	<div>
-	  	<p>6. Boolean Literal:</p>
+	  	<p th:text="#{expression.booleanLiteral}">6. Boolean Literal:</p>
 	  	<p>Is 1 equals 1 ?</p>
 	  	<p th:text="${1 == 1} ? 'This is equal' : 'This is not equal'">equal</p>
 	</div>
 	
 	<div>
-	  	<p>7. Boolean Div:</p>
+	  	<p th:text="#{expression.booleanDiv}">7. Boolean Div:</p>
 	  	<p>true=>show , false=> hide</p>
 	  	<div th:if="false">
 	  		<p>show</p>
 	  	</div>
 	</div>
 	
-	<a th:href="@{/}">home</a>
+	<a th:href="@{/}" th:text="#{home}">home</a>
 	
   </body>
 
