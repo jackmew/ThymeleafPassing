@@ -84,15 +84,24 @@ Controller receive Person object , which was with @Valid , @Valid means to valid
 ####You can add more condition to Person
 
 @NotNull
+
 @NotEmpty
+
 @Size(max = 50)
+
 @Max(100)
+
 @Column(name = "username" , length = 50)
 
 
 
+# Reference
 
+[spring.io -- validating form input](http://spring.io/guides/gs/validating-form-input/)
 
+[Thymeleaf + Spring](http://www.thymeleaf.org/doc/thymeleafspring.html)
+
+[Using Thymeleaf](http://www.thymeleaf.org/doc/usingthymeleaf.html)
 
 
 
