@@ -21,12 +21,13 @@ import org.thymeleaf.passing.domain.Foo;
  * @author jackho
  *
  */
-@Controller
-public class LinkController {
+@Controller 
+@RequestMapping("/passing")
+public class PassingController {
 
 	@RequestMapping("/") 
 	public ModelAndView home() {
-		return new ModelAndView("index");
+		return new ModelAndView("passing");
 	}
 
 	
@@ -45,7 +46,7 @@ public class LinkController {
 		System.out.println("Foo :");
 		System.out.println(foo.getI());
 		System.out.println(foo.getStr());
-		return "index";
+		return "passing";
 	}
 	// 3. send List<Foo>
 	@RequestMapping(value="sendList",method=RequestMethod.GET)

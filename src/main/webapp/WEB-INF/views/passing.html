@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Thymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <h1 th:text="#{passing.welcome}">Welcome!</h1>
+  
+  	<div>
+	  	<p th:text="#{passing.object}">object</p>
+		<a th:href="@{/passing/sendObject}">send foo object</a>
+	</div>
+	
+	<div th:if="${foo != null}">
+		<table th:object="${foo}">
+			<p th:text="*{str}">foo.str</p>
+			<p th:text="*{i}">foo.i</p>
+		</table>
+	</div>
+	
+	<div>
+	  	<p th:text="#{passing.list}">object</p>
+		<a th:href="@{/passing/sendList}">send foos in List</a>
+	</div>
+	
+	<br></br>
+	
+	<a th:href="@{/}">home</a>
+  </body>
+
+</html>

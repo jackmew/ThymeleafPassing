@@ -3,30 +3,23 @@
       xmlns:th="http://www.thymeleaf.org">
 
   <head>
-    <title>Thymeleaf</title>
+    <title th:text="#{home.welcome}">Thymeleaf Guide</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
 
   <body>
-    <h1 th:text="#{home.welcome}">Welcome!</h1>
-  
+
   	<div>
-	  	<p th:text="#{home.object}">object</p>
-		<a href="sendObject">send foo object</a>
+	  	<p th:text="#{home.welcome}">Learn</p>
+	  	
+		<a th:href="@{/passing/}">1. Learn passing</a>
+		<br></br>
+		<br></br>
+		<a th:href="@{/expression/}">2. Learn expression</a>
+		<br></br>
+		<br></br>
+		<a th:href="@{/validate/}">3. Learn validating form input</a>
 	</div>
-	
-	<div th:if="${foo != null}">
-		<table th:object="${foo}">
-			<p th:text="*{str}">foo.str</p>
-			<p th:text="*{i}">foo.i</p>
-		</table>
-	</div>
-	
-	<div>
-	  	<p th:text="#{home.list}">object</p>
-		<a href="sendList">send foos in List</a>
-	</div>
-	
 	
   </body>
 
