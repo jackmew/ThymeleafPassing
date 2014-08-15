@@ -1,4 +1,4 @@
-#It's a simple spring boot + thymeleaf project showing how to send/receive object & send List<T>.
+#It's a simple spring boot + thymeleaf project showing use thymeleaf feature.
 
 
 #run
