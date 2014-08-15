@@ -1,4 +1,4 @@
-#It's a simple spring boot + thymeleaf project showing use thymeleaf feature.
+#It's a spring boot + thymeleaf project showing basic thymeleaf feature.
 
 
 #run
