@@ -1,7 +1,7 @@
 #It's a spring boot + thymeleaf project showing basic thymeleaf feature.
 
 
-#run
+# run
 
 `cd thymeleafPassing`
 
